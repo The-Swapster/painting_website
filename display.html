@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="display.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href=#>
+                <div class=lg></div> <img class=logo src='bid1.png'> </div>
+            </a>
+            <li><a href="login.html"><i class="glyphicon glyphicon-user"></i></a></li>
+            <li><a href=#>Gallery</a></li>
+            <li><a href=#>Auction</a></li>
+            <li><a href=#>Artwork</a></li>
+            <li><a href=#>Artist</a></li>
+            <li><a href=#>Home</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <table align="center">
+            <tr>
+                <td>First Name:</td>
+                <td>
+                    <?php echo $_POST ['firstname']; ?>
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td>
+                    <?php echo $_POST ['lastname']; ?>
+                </td>
+            </tr>
+            <tr>
+                <td> Email ID:</td>
+                <td>
+                    <?php echo $_POST ['emailid']; ?>
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <?php echo $_POST ['dob'];?>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <?php echo $_POST['sex'];?>
+                </td>
+            </tr>
+            <tr>
+                <td> Phone Number:</td>
+                <td>
+                    <?php echo $_POST['phoneno'];?>
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <?php echo $_POST ['address'];?>
+                </td>
+            </tr>
+            <tr>
+                <td> Artist Prefered:</td>
+                <td>
+                    <?php echo $_POST ['artists']; ?>
+                </td>
+            </tr>
+            <tr>
+                <td> Painting Type:</td>
+                <td>
+                    <?php echo $_POST ['type']; ?>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=2 align=center><input id="submit" type="submit" value="Submit"></td>
+            </tr>
+    </div>
+
+</body>
+
+</html>

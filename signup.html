@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up</title>
+    <script>
+        function validateform() {
+            var fname = document.signup.firstname.value;
+            var lname = document.signup.lastname.value;
+            var password = document.signup.password.value;
+            var rpassword = document.signup.rpassword.value;
+            var emailid = document.signup.emailid.value;
+            var sex = document.signup.sex.value;
+            var phoneno = document.signup.phoneno.value;
+            var artists = document.getElementById("artists").value;
+            var address = document.signup.address.value;
+            var dob = document.signup.dob.value;
+            var type = document.signup.type.value;
+
+            if (fname == null || fname == "" || lame == null || lname == "" || password == null || password == "" || rpassword == null || rpassword == "" || emailid == null || emailid == "" || dob == null || dob == "" || sex == null || sex == "" || phoneno == null || phoneno == "" || address == null || address == "" || artists == null || artists == "" || type == null || type == "") {
+                alert("Fill in the blank space");
+            }
+            if (password.lenght < 6) {
+                alert("Password must be at least 6 characters long.")
+            } else if (password != rpassword) {
+                alert("Password is not same.");
+            }
+            if (phoneno.lenght == 10) {
+                alert("Phone number should be of 10 numbers");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href=#>
+                <div class=lg></div> <img class=logo src='bid1.png'> </div>
+            </a>
+            <li><a href="login.html"><i class="glyphicon glyphicon-user"></i></a></li>
+            <li><a href=#>Gallery</a></li>
+            <li><a href=#>Auction</a></li>
+            <li><a href=#>Artwork</a></li>
+            <li><a href=#>Artist</a></li>
+            <li><a href=#>Home</a></li>
+        </ul>
+    </nav>
+    <div id='formhead'>
+        <div id='login'><a href="login.html">Login</a></div>
+        <div id='sign'><a href="signup.html">Sign-Up</a></div>
+    </div>
+    <div id="container">
+        <form name="signup" action="display.php" method="POST" onsubmit="return validateform()">
+            <table align="center">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="firstname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="lastname"></td>
+                </tr>
+                <tr>
+                    <td>Email id:</td>
+                    <td><input type="text" name="emailid"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="radio" name="sex" value="Male">Male
+                        <input type="radio" name="sex" value="Female">Female
+                        <input type="radio" name="sex" value="Others">Others</td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Re Enter Password:</td>
+                    <td><input type="password" name="rpassword"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="tel" name="phoneno"></td>
+                </tr>
+                <tr rowspan=2>
+                    <td>Address:</td>
+                    <td><input type="textarea" name="address"></td>
+                </tr>
+                <tr>
+                    <td>Preferred Artist:</td>
+                    <td>
+                        <select id="artists" name="artists">
+                            <option value="Ram">Ram</option>
+                            <option value="Sita">Sita</option>
+                            <option value="Lakshman">Lakshman</option>
+                            <option value="Hanuman">Hanuman</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Painting:</td>
+                    <td>
+                        <input type="checkbox" name="type" value="Oil-Painting">Oil-Paining
+                        <input type="checkbox" name="type" value="Water Colour">Water Colour
+                        <input type="checkbox" name="type" value="Acrylic">Acrylic
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2 align=center><input id="submit" type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>

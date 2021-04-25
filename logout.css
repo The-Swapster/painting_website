@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: seashell;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 50px 0px;
+    background-color: #10375C;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 75px;
+    background-color: #10375C;
+}
+
+li {
+    float: right;
+    font-weight: 300px;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: snow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.dropbtn-content:hover {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    max-height: 10px;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #29DE92;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #E3F6F5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #c2bcbc;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.arrow {
+    border: solid snow;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.logo {
+    width: auto;
+    height: 75px;
+}
+
+.lg {
+    float: left;
+}
+
+#container {
+    background-color: #BAE8E8;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+#submit {
+    background-color: #10375C;
+    border-radius: 10px;
+    max-width: 85px;
+    font-size: 12px;
+    padding: 2px 8px 3px 8px;
+    margin: 2px;
+    color: snow;
+}
+
+td {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
